@@ -18,6 +18,9 @@ def calificacion(nota):
     elif nota < 9:
         return "Notable"
     return "Sobresaliente"
+def media_ponderada(notas, pesos):
+    """Media ponderada: cada nota se multiplica por su peso."""
+    return sum(n * p for n, p in zip(notas, pesos)) / sum(pesos)
 
 if __name__ == "__main__":
     notas = [6.5, 7, 8.25, 5]
