@@ -50,3 +50,4 @@ if __name__ == "__main__":
     print(f"Nota máxima: {nota_maxima(notas)}")
     print(f"Nota mínima: {nota_minima(notas)}")
 
+print("DEBUG")
