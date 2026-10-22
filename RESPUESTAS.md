@@ -19,7 +19,7 @@ Significa que no esta guardado con el commit y si se modifica luego seria azul.
 3. Preguntas
 ¿Qué es origin?
 
-Es de donde parte la rama principal (main)
+Es el nombre por defecto del repositorio remoto.
 
 Explica con tus palabras la diferencia entre commit y push.
 
@@ -87,14 +87,16 @@ Porque el archivo seguía existiendo localmente.
 
 ¿Cuántos commits tiene main en total? 
 
-6
+20 commits
 
 ¿Cuántos son commits de merge? 
 
-2
+3
 
 ¿Qué commit introdujo la validación del rango? 
 
 Busca ese cambio en el historial y copia los 7 primeros caracteres de su hash.
 
-86f3fa0f
+99e04bd
+
+lo saque con: git log -S"ValueError" --oneline -- main.py 
