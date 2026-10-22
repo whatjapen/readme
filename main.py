@@ -1,3 +1,5 @@
+"""Calcula estadísticas de notas."""
+
 def media(notas):
     """Devuelve la media aritmética de una lista de notas."""
     return sum(notas) / len(notas)
@@ -42,3 +44,7 @@ if __name__ == "__main__":
 
     print(f"Nota máxima: {nota_maxima(notas)}")
     print(f"Nota mínima: {nota_minima(notas)}")
+
+    def aprobados(notas):
+        """Devuelve cuántas notas son iguales o superiores a 5."""
+        return sum(1 for n in notas if n >= 5)
