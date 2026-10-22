@@ -3,10 +3,6 @@ def media(notas):
     return sum(notas) / len(notas)
 
 
-if __name__ == "__main__":
-    notas = [6.5, 7, 8.25, 5]
-    print(f"Media: {media(notas):.2f}")
-
 def calificacion(nota):
     """Devuelve la calificación en texto de una nota numérica."""
     if nota < 5:
@@ -19,9 +15,21 @@ def calificacion(nota):
         return "Notable"
     return "Sobresaliente"
 
+
 def media_ponderada(notas, pesos):
     """Media ponderada: cada nota se multiplica por su peso."""
     return sum(n * p for n, p in zip(notas, pesos)) / sum(pesos)
+
+
+def nota_maxima(notas):
+    """Devuelve la nota más alta."""
+    return max(notas)
+
+
+def nota_minima(notas):
+    """Devuelve la nota más baja."""
+    return min(notas)
+
 
 if __name__ == "__main__":
     notas = [6.5, 7, 8.25, 5]
@@ -31,3 +39,6 @@ if __name__ == "__main__":
 
     pesos = [0.2, 0.2, 0.4, 0.2]
     print(f"Media ponderada: {media_ponderada(notas, pesos):.2f}")
+
+    print(f"Nota máxima: {nota_maxima(notas)}")
+    print(f"Nota mínima: {nota_minima(notas)}")
