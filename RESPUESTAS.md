@@ -96,3 +96,5 @@ Porque el archivo seguía existiendo localmente.
 ¿Qué commit introdujo la validación del rango? 
 
 Busca ese cambio en el historial y copia los 7 primeros caracteres de su hash.
+
+86f3fa0f
